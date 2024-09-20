@@ -1,0 +1,10 @@
+name: my_first_action
+on: workflow_dispatch 
+jobs:
+  name: first_yml_action
+  runs-on: ubuntu-latest
+  steps:
+    - name: prints greetings
+      runs: echo "hello there"
+    - name: prints bye
+      runs: echo "Good Bye"
