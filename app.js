@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 
 app.use('/',(req,res)=>{
-    res.send("Hello new world welcome everyone")
+    res.send("Hello new worldwelcome everyone")
  });
 
 
