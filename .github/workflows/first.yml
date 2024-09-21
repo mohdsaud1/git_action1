@@ -1,10 +1,16 @@
-name: my_first_actions
-on: workflow_dispatch 
+name: first test
+on: push
 jobs:
-  first_yml_action:
+  test:
     runs-on: ubuntu-latest
     steps:
-      - name: prints greetings
-        run: echo "hello there"
-      - name: prints bye
-        run: echo "Good Bye"
+      - name: get code
+        uses: actions/checkout@v3
+      - name: install node.js
+        uses: actions/setup-node@v3
+          with:
+            node-version: "20.x"
+      - name: install dependencies
+        run: npm ci
+      - name: run test
+        run: npm start
