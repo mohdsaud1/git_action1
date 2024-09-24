@@ -16,8 +16,8 @@ jobs:
         run: npm test
   deploy:
     runs-0n: ubuntu-latest
-      steps:
-        - name: get code
+    steps:
+      - name: get code
         uses: actions/checkout@v3
       - name: install node.js
         uses: actions/setup-node@v3
