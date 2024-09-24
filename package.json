@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "build": "npm run build",
+    "build": " build app.js",
     "test": "test app.js",
     "start": "node app.js"
   },
